@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!--               Stylesheets             -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="icon"  href="./img/mylogo.jpg">
+</head>
+<body>
+  <!--               Nav bar             -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a href="Home.htm">
+        <img  class="logo" src="img/mylogo.jpg" alt="logo" >
+      </a>
+      <a class="navbar-brand text-dark " href="#">Amino Gym</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link px-3 active" href="Home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 active" href="About-us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 active" href="Classes.html">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 active mb-3" href="Contact.html">Contact</a>
+          </li>
+          <li>
+            <!-- Log in trigger modal -->
+            <button type="button" class="btn nav-btn mb-3 me-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Log in
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Log in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Email -->
+                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <!-- Password -->
+                    <input type="password" id="defaultLoginFormPassword" required class="form-control mb-4" placeholder="Password">
+                    <div class="d-flex justify-content-around">
+                      <div>
+                        <!-- Remember me -->
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                          </div>
+                      </div>
+                      <div>
+                        <!-- Forgot password -->
+                        <a href="">Forgot your password ?</a>
+                      </div>
+                    </div>
+                    <!-- Sign in modal button -->
+                    <div class="col-md-12">
+                      <div>
+                        <button class="btn btn-dark my-4 btn-block w-100" type="submit">Log in</button>
+                      </div>
+                    </div>
+                    <!-- Register -->
+                    <p class="text-center">Not a member?
+                      <a href="">Sign up</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!-- Sign up trigger modal -->
+            <button type="button" class="btn nav-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Sign up
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row mb-4">
+                      <div class="col-md-6 col-6">
+                        <!-- First name -->
+                        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Name">
+                      </div>
+                      <div class="col-md-6 col-6">
+                         <!-- Last name -->
+                         <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Family Name">
+                      </div>
+                    </div>
+                    <!-- E-mail -->
+                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <!-- Password -->
+                    <input type="password" id="defaultRegisterFormPassword" required class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <!-- Confirm password -->
+                    <input type="password" id="defaultConfirmFormPassword" required class="form-control mt-4 mb-4" placeholder="Confirm Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <!-- Phone number -->
+                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Telephone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    <!-- Sign up modal button -->
+                    <div class="col-md-12">
+                      <div>
+                        <button class="btn btn-dark my-4 btn-block w-100" type="submit">sign up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>   
+      </div>
+    </div>
+  </nav>
+
+
+  <!--               Script             -->
+  <script src="./js/bootstrap.js"></script>
+</body>
+</html>

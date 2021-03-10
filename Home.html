@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--               Stylesheets             -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="icon"  href="./img/mylogo.jpg">
+</head>
+<body>
+   <!--               Nav bar            -->
+  <nav class="navbar navbar-expand-lg navbar-light ps-2 px-2">
+    <div class="container-fluid">
+      <a href="Home.html">
+        <img  class="logo" src="img/mylogo.jpg" alt="logo" >
+      </a>
+      <a class="navbar-brand text-dark" href="#">Amino Gym</a>
+      <button class="navbar-toggler mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item pt-3 active">
+            <a class="nav-link px-3 active" href="Home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item pt-3">
+            <a class="nav-link px-3 active" href="About-us.html">About us</a>
+          </li>
+          <li class="nav-item pt-3 ">
+            <a class="nav-link px-3 active" href="Classes.html">Classes</a>
+          </li>
+          <li class="nav-item pt-3">
+            <a class="nav-link px-3 active mb-3" href="Contact.html">Contact</a>
+          </li>
+          <li>
+            <!-- Log in trigger modal -->
+            <button type="button" class="btn nav-btn mt-3 mb-3 me-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Log in
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Log in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Email -->
+                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <!-- Password -->
+                    <input type="password" id="defaultLoginFormPassword" required class="form-control mb-4" placeholder="Password">
+                    <div class="d-flex justify-content-around">
+                      <div>
+                        <!-- Remember me -->
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                          </div>
+                      </div>
+                      <div>
+                        <!-- Forgot password -->
+                        <a href="">Forgot your password ?</a>
+                      </div>
+                    </div>
+                    <!-- Sign in modal button -->
+                    <div class="col-md-12">
+                      <div>
+                        <button class="btn btn-dark my-4 btn-block w-100" type="submit">Log in</button>
+                      </div>
+                    </div>
+                    <!-- Register -->
+                    <p class="text-center">Not a member?
+                      <a href="">Sign up</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!-- Sign up trigger modal -->
+            <button type="button" class="btn nav-btn mt-3 me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Sign up
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-info row mb-4">
+                      <div class="col-md-6 col-6">
+                        <!-- First name -->
+                        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Name">
+                      </div>
+                      <div class="col-md-6 col-6">
+                         <!-- Last name -->
+                         <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Family Name">
+                      </div>
+                    </div>
+                    <!-- E-mail -->
+                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <!-- Password -->
+                    <input type="password" id="defaultRegisterFormPassword" required class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <!-- Confirm password -->
+                    <input type="password" id="defaultConfirmFormPassword" required class="form-control mt-4 mb-4" placeholder="Confirm Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <!-- Phone number -->
+                    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Telephone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    <!-- Sign up modal button -->
+                    <div class="col-md-12">
+                      <div>
+                        <button class="btn btn-dark my-4 btn-block w-100" type="submit">sign up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>   
+      </div>
+    </div>
+  </nav>
+  <!--               Top section          -->
+  <section>
+    <div class="container-fluid">
+      <div class="position-relative">
+        <img  class="img-fluid top-img" src="./img/home/hero-bg.jpg" alt="">
+        <div class="top-text position-absolute  top-50 start-50 translate-middle">
+          <div class="col-md-12 col-12">
+            <h4>Physical activity</h4>
+            <h4>enhances positive energy!</h4>
+          </div>
+          <a href="Contact.html" class="btn primary-btn">Join us</a>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!--               Description section           -->
+  <section class="Description-section">
+    <div class="container-fluid">
+      <div class="row">
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img  class="img-fluid  description-img" src="./img/home/feature/feature-1-bg.jpg" alt="">
+                <div class=" col-md-12 col-12 top-text position-absolute  top-50 start-50 translate-middle">
+                    <h4 class="mb-5">GROUP CLASSES</h4>
+                    <p class="p-2 description-paragraph">The Sopranos manages to address the biases and benefits of therapy</p>
+                    <a href="About-us.html" class="btn primary-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img  class="img-fluid  description-img" src="./img/home/feature/feature-2-bg.jpg" alt="">
+                <div class="col-md-12 col-12 top-text position-absolute  top-50 start-50 translate-middle">
+                    <h4 class="mb-5">PERSONAL TRAINING</h4>
+                    <p class="p-2 description-paragraph">Strep throat is very common during the flu seasons and it can be preceded</p>
+                  <a href="About-us.html" class="btn primary-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="position-relative">
+                <img  class="img-fluid  description-img" src="./img/home/feature/feature-3-bg.jpg" alt="">
+                <div class="col-md-12 col-12 top-text position-absolute  top-50 start-50 translate-middle">
+                    <h4 class="mb-5">SPORTS NUTRUTION</h4>
+                    <p class="p-2 description-paragraph">A Human Being’s right to life implies his right to have the free and unrestricted</p>
+                  <a href="About-us.html" class="btn primary-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--               Welcome-section             -->
+  <section>
+    <div class="container-fluid">
+      <div class="position-relative">
+        <img  class="img-fluid welcome-img" src="./img/home/hero-2-bg.jpg" alt="">
+        <div class=" col-md-7 col-12 welcome-text position-absolute p-5 top-50 start-0 translate-middle-y">
+          <h1 class="mb-4">WELCOME TO CROSSFIT</h1>
+          <p class="p-1">CrossFit is a cutting-edge functional fitness system that can help everyday men.<br><br>
+          Success isn’t really that difficult. There is a significant portion of the population here in North America, that actually want and need success to be hard! For those of you who are serious about having more, doing more, giving more and being more.</p>
+          <a href="About-us.html" class="btn primary-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  	<!-- Trainers section -->
+  <section class="trainer-section p-5 text-white">
+    <div class="container-fluid ms-2 me-2">
+      <h1 class="text-center p-5">Our trainers</h1>
+      <div class="row">
+            <div class=" col-md-3 mb-5 pe-3">
+              <div class="position-relative">
+                <img  class="img-fluid  trainer-img col-12" src="./img/home/trainers/trainer-1.jpg" alt="">
+                <div class=" trainer-description col-md-12 col-12 position-absolute top-100 end-0">
+                  <h5 class="card-title trainer-name">Becky Taylor</h5>
+                  <p class="card-text trainer-job"><small>Gymer</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-5 pe-3">
+              <div class="position-relative">
+                <img  class="img-fluid trainer-img col-12" src="./img/home/trainers/trainer-2.jpg" alt="">
+                <div class="trainer-description col-md-12 col-12 position-absolute top-100 end-0">
+                  <h5 class="card-title trainer-name">Noah Leonard</h5>
+                  <p class="card-text trainer-job"><small>Gymer</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-5 pe-3">
+              <div class="position-relative">
+                <img  class="img-fluid trainer-img col-12" src="./img/home/trainers/trainer-3.jpg" alt="">
+                <div class="trainer-description col-md-12 col-12 position-absolute top-100 end-0">
+                  <h5 class="card-title trainer-name">Evelyn Fields</h5>
+                  <p class="card-text trainer-job"><small>Gymer</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 pe-3">
+              <div class="position-relative">
+                <img  class="img-fluid trainer-img col-12" src="./img/home/trainers/trainer-4.jpg" alt="">
+                <div class="trainer-description col-md-12 col-12 position-absolute top-100 end-0">
+                  <h5 class="card-title trainer-name">Leroy Guzman</h5>
+                  <p class="card-text trainer-job"><small>Manager</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Newsletter section -->
+  <section>
+    <div class="container-fluid">
+      <div class="position-relative">
+        <img  class="img-fluid newsletter-img col-md-12" src="img/newsletter-bg.jpg" alt="">
+          <div class="row">
+            <div class=" col-md-12 col-12 position-absolute top-50 start-50 translate-middle">
+               <div class="row">
+                <div class="col-md-6 col-12 mb-2 p-3">
+                  <h1 class="text-white text-center">Subscribe to newsletter</h1>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center p-2">
+                  <form class="newsletter-form">
+                    <input type="text" placeholder="Your e-mail here">
+                  </form>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center p-2">
+                  <form class="newsletter-form">
+                    <a  href="contact.html" class="site-btn" type="submit">Subscribe</a>
+                  </form>
+                </div>
+               </div>
+            </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!--               Footer            -->
+  <div class="container-fluid  footer py-5 px-4">
+    <div class="row">
+      <div class="col-md-3">
+        <h4 class="pb-3">Amino Gym</h4>
+        <p class="mb-5">Despite growth of the Internet over the past seven years, the use of toll-free phone numbers in television advertising continues.</p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="pb-3">Horaires de travail</h4>
+        <div class="info-footer">
+          <dl >
+            <dd>
+              <i class="fas fa-clock me-4"></i>
+               <span class="">MONDAY</span> <span class="ms-5">07:00 - 21:00</span>
+            </dd>
+            <dd>
+              <i class="fas fa-clock me-4"></i>
+               <span class="">TUESDAY</span> <span class="TUESDAY">07:00 - 21:00</span>
+            </dd>
+            <dd>
+              <i class="fas fa-clock me-4"></i>
+                <span class="">WEDNESDAY</span> <span class="ms-3">07:00 - 21:00</span>
+            </dd>
+            <dd>
+              <i class="fas fa-clock me-4"></i>
+                <span class="">THURSDAY</span> <span class="THURSDAY">07:00 - 21:00</span>
+            </dd>
+          <dd>
+              <i class="fas fa-clock me-4"></i>
+                <span class="">FRIDAY</span><span class="FRIDAY">07:00 - 21:00</span>
+          </dd>
+          <dd>
+            <i class="fas fa-clock me-4"></i>
+              <span class="">SATURDAY</span> <span class="SATURDAY">08:00 - 16:00</span>
+          </dd>
+          <dd class="mb-5">
+            <i class="fas fa-clock me-4"></i>
+              <span class="">SUNDAY</span><span class="SUNDAY">08:00 - 16:00</span>
+          </dd>
+         </dl>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4 class="pb-3">Program</h4>
+        <dl class="info-footer mb-3">
+          <dd>Bodybuilding</dd>	
+          <dd>Running</dd>
+          <dd>Streching</dd>
+          <dd>Weight Loss</dd>
+          <dd class="mb-5">Gym Fitness</dd>
+        </dl>
+      </div>
+      <div class="col-md-3">
+        <h4 class="pb-3">Get in touch</h4>
+        <dl>
+          <dd>
+              <i class="fa fa-phone me-4"></i>
+              <span>(12) 345 6789</span>
+            </dd>
+          <dd>
+              <i class="fas fa-envelope me-4"></i>
+              <span>amino-gym.info@gmail.com</span>
+          </dd>
+          <dd>
+              <i class="fa fa-map-marker me-4"></i>
+              <span class="adress">Iris Watson, Box 283 8562, NY</span>
+         </dd>
+      </dl>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-evenly pt-3">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-1">
+        <div class ="copyright"> <i class="fas fa-copyright"></i> Copyright Amino <i class="fas fa-heart"></i> 2021
+      </div>
+    </div>
+  </div>
+	
+  <!--               Script             -->
+  <script src="./js/bootstrap.js"></script>  
+</body>
+</html>

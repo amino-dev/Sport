@@ -294,7 +294,7 @@ iframe {
 }
 
 .about-description {
-    line-height: 2.5rem;
+    line-height: 1.9rem;
 }
 
 @media screen and (max-width: 840px) and (min-width: 380px){
@@ -302,3 +302,36 @@ iframe {
        width: 100%;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    .history-img {
+      height: 25rem;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .history-img {
+      height: 30rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .history-img {
+      height: 42rem;
+    }
+  }
+
+  @media screen and (max-width: 530px) {
+    .history-img {
+      height: 60rem;
+    }
+  }
+ 
+.history-paragraph {
+    line-height: 2rem;
+}
+
+.single-price-plan {
+		transform: scale(0.7);
+}
+	

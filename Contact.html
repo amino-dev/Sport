@@ -12,14 +12,14 @@
     <link rel="icon"  href="./img/mylogo.jpg">
 </head>
 <body>
-  <!--               Nav bar            -->
-  <nav class="navbar navbar-expand-lg navbar-light">
+   <!--               Nav bar            -->
+   <nav class="navbar navbar-expand-lg navbar-light ps-2 px-2">
     <div class="container-fluid">
       <a href="Home.html">
         <img  class="logo" src="img/mylogo.jpg" alt="logo" >
       </a>
-      <a class="navbar-brand text-dark " href="#">Amino Gym</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand text-dark" href="#">Amino Gym</a>
+      <button class="navbar-toggler mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -84,7 +84,7 @@
           </li>
           <li>
             <!-- Sign up trigger modal -->
-            <button type="button" class="btn nav-btn mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn nav-btn mt-3 me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Sign up
             </button>
             <!-- Modal -->
@@ -96,7 +96,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <div class="row mb-4">
+                    <div class="modal-info row mb-4">
                       <div class="col-md-6 col-6">
                         <!-- First name -->
                         <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Name">
@@ -129,8 +129,177 @@
       </div>
     </div>
   </nav>
-
-
+  <!--               Top section          -->
+  <section>
+    <div class="container-fluid">
+      <div class="position-relative">
+        <img  class="img-fluid contact-img" src="./img/contact/contact-bg.jpg" alt="">
+        <div class="top-text position-absolute  top-50 start-50 translate-middle">
+          <div class="col-md-12 col-12">
+            <h1>Contact</h1>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+ <!--               contact section            -->
+ <section class="contact-section ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12 d-flex justify-content-center mb-5 pt-2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d188618.51311104256!2d-71.236572!3d42.381647!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1576756626784!5m2!1sen!2sbd"></iframe>
+      </div>
+      <div class="col-md-6 col-12 d-flex justify-content-center">
+        <div class="contact-information pt-4">
+          <div class="contact-info">
+            <h4>Information</h4>
+              <dl>
+                <dd><i class="fa fa-phone"></i><span>(12)-100-100-100</span></dd>
+               <dd><i class="fa fa-envelope"></i><span>amino-gym.info@gmail.com</span></dd>
+              </dl>
+          </div>
+          <div class="contact-adress">
+            <h4>Address</h4>
+              <dl>
+                <dd><i class="fa fa-map-marker"></i><span>Iris Watson, United State</span></dd>
+              </dl>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center contact-form mt-5">
+		<div class="col-md-6 col-12">
+			<div class="col-md-12 col-12">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="subject">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <div class="d-flex justify-content-center">
+            <div><a  href="" class="site-btn" type="submit">Send</a></div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+ </section>
+	 <!--     Newsletter section        -->
+   <section>
+    <div class="container-fluid">
+      <div class="position-relative">
+        <img  class="img-fluid newsletter-img col-md-12" src="img/newsletter-bg.jpg" alt="">
+          <div class="row">
+            <div class=" col-md-12 col-12 position-absolute top-50 start-50 translate-middle">
+               <div class="row">
+                <div class="col-md-6 col-12 mb-2 p-3">
+                  <h1 class="text-white text-center">Subscribe to newsletter</h1>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center p-2">
+                  <form class="newsletter-form">
+                    <input type="text" placeholder="Your e-mail here">
+                  </form>
+                </div>
+                <div class="col-md-3 col-12 d-flex justify-content-center p-2">
+                  <form class="newsletter-form">
+                    <a  href="contact.html" class="site-btn" type="submit">Subscribe</a>
+                  </form>
+                </div>
+               </div>
+            </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!--                    Footer            -->
+  <div class="container-fluid  footer py-5 px-4">
+    <div class="row">
+      <div class="col-md-3">
+        <h4 class="pb-3">Amino Gym</h4>
+        <p class="mb-5">Despite growth of the Internet over the past seven years, the use of toll-free phone numbers in television advertising continues.</p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="pb-3">Horaires de travail</h4>
+        <div class="info-footer">
+          <dl >
+            <dd>
+              <i class="fas fa-clock me-4"></i>
+               <span class="">MONDAY</span> <span class="MONDAY">07:00 - 21:00</span>
+            </dd>
+            <dd>
+              <i class="fas fa-clock me-4"></i>
+               <span class="">TUESDAY</span> <span class="TUESDAY">07:00 - 21:00</span>
+            </dd>
+            <dd>
+              <i class="fas fa-clock me-4"></i>
+                <span class="">WEDNESDAY</span> <span class="ms-3">07:00 - 21:00</span>
+            </dd>
+            <dd>
+              <i class="fas fa-clock me-4"></i>
+                <span class="">THURSDAY</span> <span class="THURSDAY">07:00 - 21:00</span>
+            </dd>
+          <dd>
+              <i class="fas fa-clock me-4"></i>
+                <span class="">FRIDAY</span><span class="FRIDAY">07:00 - 21:00</span>
+          </dd>
+          <dd>
+            <i class="fas fa-clock me-4"></i>
+              <span class="">SATURDAY</span> <span class="SATURDAY">08:00 - 16:00</span>
+          </dd>
+          <dd class="mb-5">
+            <i class="fas fa-clock me-4"></i>
+              <span class="">SUNDAY</span><span class="SUNDAY">08:00 - 16:00</span>
+          </dd>
+         </dl>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4 class="pb-3">Program</h4>
+        <dl class="info-footer mb-3">
+          <dd>Bodybuilding</dd>	
+          <dd>Running</dd>
+          <dd>Streching</dd>
+          <dd>Weight Loss</dd>
+          <dd class="mb-5">Gym Fitness</dd>
+        </dl>
+      </div>
+      <div class="col-md-3">
+        <h4 class="pb-3">Get in touch</h4>
+        <dl>
+          <dd>
+              <i class="fa fa-phone me-4"></i>
+              <span>(12) 345 6789</span>
+            </dd>
+          <dd>
+              <i class="fas fa-envelope me-4"></i>
+              <span>amino-gym.info@gmail.com</span>
+          </dd>
+          <dd>
+              <i class="fa fa-map-marker me-4"></i>
+              <span class="adress">Iris Watson, Box 283 8562, NY</span>
+         </dd>
+      </dl>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-evenly pt-3 mb-5">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+            <a href=""><i class="fab fa-twitter-square fa-2x "></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-1">
+        <div class ="copyright"> <i class="fas fa-copyright"></i> Copyright Amino <i class="fas fa-heart"></i> 2021
+      </div>
+    </div>
+  </div>
   <!--               Script             -->
   <script src="./js/bootstrap.js"></script>
 </body>
